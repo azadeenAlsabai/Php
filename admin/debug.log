@@ -1,0 +1,359 @@
+
+
+بيانات POST: Array
+(
+    [DoctorName] => ععع
+    [DoctorGender] => 0
+    [DoctorPhone] => 7575757
+    [DoctorSpecial] => غفغفغفغ
+    [DoctorDetail] => الالا
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => ععع
+    [DoctorGender] => 0
+    [DoctorPhone] => 7575757
+    [DoctorSpecial] => غفغفغفغ
+    [DoctorDetail] => الالا
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7945.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => عععمممم
+    [DoctorGender] => 1
+    [DoctorPhone] => 7575757
+    [DoctorSpecial] => غفغفغفغ
+    [DoctorDetail] => الالاشسيبلاتننن
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpD909.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+البيانات المعدة: Array
+(
+    [name] => عععمممم
+    [gender] => 1
+    [phone] => 7575757
+    [specialty] => غفغفغفغ
+    [details] => الالاشسيبلاتننن
+    [image] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+)
+
+استعلام SQL: INSERT INTO doctor (DoctorName, DoctorGender, DoctorPhone, DoctorSpecial, DoctorDetail, DoctorImge) 
+        VALUES ('عععمممم', 1, '7575757', 
+        'غفغفغفغ', 'الالاشسيبلاتننن', 
+        'ChatGPT Image 30 أبريل 2025، 03_10_51 م.png')
+
+بيانات POST: Array
+(
+    [DoctorName] => عععمممم
+    [DoctorGender] => 1
+    [DoctorPhone] => 7575757
+    [DoctorSpecial] => غفغفغفغ
+    [DoctorDetail] => الالاشسيبلاتننن
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpD439.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+البيانات المعدة: Array
+(
+    [name] => عععمممم
+    [gender] => 1
+    [phone] => 7575757
+    [specialty] => غفغفغفغ
+    [details] => الالاشسيبلاتننن
+    [image] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+)
+
+استعلام SQL: INSERT INTO doctor 
+        (DoctorName, DoctorGender, DoctorPhone, DoctorSpecial, DoctorDetail, DoctorImge, ServicesID) 
+        VALUES ('عععمممم', 1, '7575757', 
+        'غفغفغفغ', 'الالاشسيبلاتننن', 
+        'ChatGPT Image 30 أبريل 2025، 03_10_51 م.png',
+        0)
+تم الإدراج بنجاح، ID: 7
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 0
+    [DoctorPhone] => 34567
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلات
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 0
+    [DoctorPhone] => 34567
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلات
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7712.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 0
+    [DoctorPhone] => 34567
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلاتاااااا
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php92A9.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 0
+    [DoctorPhone] => 3456788888
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلاتاااااا
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpC37E.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+حقل مطلوب مفقود: DoctorGender
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 1
+    [DoctorPhone] => 3456788888
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلاتاااااا
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpEBA8.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+البيانات المعدة: Array
+(
+    [name] => نننن
+    [gender] => 1
+    [phone] => 3456788888
+    [specialty] => يبلات
+    [details] => بلاتاااااا
+    [image] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+)
+
+استعلام SQL: INSERT INTO doctor 
+        (DoctorName, DoctorGender, DoctorPhone, DoctorSpecial, DoctorDetail, DoctorImge, ServicesID) 
+        VALUES ('نننن', 1, '3456788888', 
+        'يبلات', 'بلاتاااااا', 
+        'ChatGPT Image 30 أبريل 2025، 03_10_51 م.png',
+        0)
+
+بيانات POST: Array
+(
+    [DoctorName] => نننن
+    [DoctorGender] => 1
+    [DoctorPhone] => 3456788888
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلاتااااااتتتتتت
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php32A5.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+البيانات المعدة: Array
+(
+    [name] => نننن
+    [gender] => 1
+    [phone] => 3456788888
+    [specialty] => يبلات
+    [details] => بلاتااااااتتتتتت
+    [image] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+)
+
+استعلام SQL: INSERT INTO doctor 
+        (DoctorName, DoctorGender, DoctorPhone, DoctorSpecial, DoctorDetail, DoctorImge, ServicesID) 
+        VALUES ('نننن', 1, '3456788888', 
+        'يبلات', 'بلاتااااااتتتتتت', 
+        'ChatGPT Image 30 أبريل 2025، 03_10_51 م.png',
+        0)
+
+بيانات POST: Array
+(
+    [DoctorName] => ننننهههههه
+    [DoctorGender] => 1
+    [DoctorPhone] => 3456788888
+    [DoctorSpecial] => يبلات
+    [DoctorDetail] => بلاتااااااتتتتتت
+)
+
+بيانات FILES: Array
+(
+    [DoctorImge] => Array
+        (
+            [name] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [full_path] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php6E58.tmp
+            [error] => 0
+            [size] => 1127089
+        )
+
+)
+
+تم رفع الصورة: C:\xampp\htdocs\Php\admin/uploads/ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+البيانات المعدة: Array
+(
+    [name] => ننننهههههه
+    [gender] => 1
+    [phone] => 3456788888
+    [specialty] => يبلات
+    [details] => بلاتااااااتتتتتت
+    [image] => ChatGPT Image 30 أبريل 2025، 03_10_51 م.png
+)
+
+استعلام SQL: INSERT INTO doctor 
+        (DoctorName, DoctorGender, DoctorPhone, DoctorSpecial, DoctorDetail, DoctorImge, ServicesID) 
+        VALUES ('ننننهههههه', 1, '3456788888', 
+        'يبلات', 'بلاتااااااتتتتتت', 
+        'ChatGPT Image 30 أبريل 2025، 03_10_51 م.png',
+        0)

@@ -1,0 +1,108 @@
+*{
+
+    padding: 0;
+    margin: 0;
+}
+body{
+
+
+    background-image: url(../Picture/9\ habits\ that\ are\ killing\ your\ teeth\ -\ WTOP\ News.jpeg);
+    background-color: rgb(128, 216, 216);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+}
+section{
+
+    display: flex;
+    flex-direction: column;
+   padding-top: 00px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+section .Header{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section .Header p{
+font-size: 25px;
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-right: 150px;
+color: rgb(48, 21, 63);
+    margin-top: 100px;
+}
+section .Header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 2px;
+    margin-top: 100px;
+}
+section form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 30px;
+
+
+}
+section form div{
+
+    display: flex;
+justify-content:safe;
+margin: 25px;
+}
+section form  img{
+
+ width: 32;
+ height: 32;
+ margin-left: 30px;
+
+
+}
+section form div p{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 70px;
+}
+section form div input,select{
+width: 300px;
+border-color: blue;
+border-radius: 5px;
+height: 35px;
+font-size: 20px;
+}
+
+section form div button{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+section form div .submet{
+margin-left: 250px;
+background-color: rgb(2, 78, 15);
+color: white ;
+width: 100px;
+border-radius: 10px;
+border-color: aqua;
+}
+
+section form div .cancel{
+   
+    background-color: rgb(209, 1, 1);
+    color: white ;
+    width: 100px;
+    border-radius: 10px;
+    border-color: aqua;
+    text-align: center;
+    }

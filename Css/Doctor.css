@@ -1,0 +1,102 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+    text-align: center;
+    background-color: #f9f9f9;
+
+}
+
+.title{
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+
+}
+
+.clinic-description {
+    background-color: #f4f9fd;
+    border: 1px solid #cde1f9;
+    padding: 25px;
+    border-radius: 12px;
+    font-family: 'Tahoma', sans-serif;
+    line-height: 2;
+    font-size: 18px;
+    color: #333;
+    margin: 30px auto;
+    width: 85%;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    text-align: right;
+  }
+  
+  .clinic-description strong {
+    color: #0078d7;
+  }
+
+/* الحاوية الأساسية */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* تصميم الكروت */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* صورة الطبيب */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* اسم الطبيب */
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* زر التفاصيل */
+.card back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.card back-btn:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .image-section, .info-section {
+        max-width: 100%;
+    }
+}

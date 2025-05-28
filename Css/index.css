@@ -1,0 +1,674 @@
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --primary-light: #5dade2;
+            --primary-main: #3498db;
+            --primary-dark: #2874a6;
+            --dental-green: #2ecc71;
+            --dental-blue: #2980b9;
+            --dental-gold: #f1c40f;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --text-color: #2c3e50;
+            --transition-base: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* شريط التنقل */
+        .navbar {
+            padding: 15px 0;
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: var(--transition-base);
+        }
+
+        .navbar.scrolled {
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            transition: var(--transition-base);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            padding: 8px 15px;
+            margin: 0 5px;
+            color: var(--text-color) !important;
+            position: relative;
+            transition: var(--transition-base);
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--dental-green);
+            transition: var(--transition-base);
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-main) !important;
+        }
+
+        /* بانر الهيرو */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(46, 204, 113, 0.9)), 
+                        url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 150px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .hero-btns .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            transition: var(--transition-base);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: var(--dental-green);
+            border-color: var(--dental-green);
+        }
+
+        .btn-primary:hover {
+            background-color: #27ae60;
+            border-color: #27ae60;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.3);
+        }
+
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-features {
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* قسم الخدمات */
+        .services-section {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--dental-green), var(--primary-main));
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        .service-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition-base);
+            margin-bottom: 30px;
+            border: none;
+            background-color: var(--white);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition-base);
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-main), var(--dental-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            margin: -35px auto 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .service-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .service-text {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: var(--primary-main);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: var(--transition-base);
+        }
+
+        .read-more:hover {
+            color: var(--primary-dark);
+        }
+
+        .read-more i {
+            margin-right: 5px;
+            transition: var(--transition-base);
+        }
+
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+
+        /* قسم الإحصائيات */
+        .stats-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-main), var(--primary-dark));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://img.icons8.com/ios/100/ffffff/dental-braces.png') no-repeat;
+            background-position: 90% center;
+            opacity: 0.05;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .stat-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* قسم أعمالنا */
+        .our-work-section {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+        }
+
+        .work-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .work-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition-base);
+        }
+
+        .work-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .work-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition-base);
+        }
+
+        .work-item:hover .work-img {
+            transform: scale(1.1);
+        }
+
+        .work-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transition: var(--transition-base);
+        }
+
+        .work-item:hover .work-overlay {
+            opacity: 1;
+        }
+
+        .work-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .work-description {
+            font-size: 0.9rem;
+        }
+
+        /* قسم الأطباء */
+        .doctors-section {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .doctor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition-base);
+            margin-bottom: 30px;
+            background-color: var(--white);
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .doctor-img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            transition: var(--transition-base);
+        }
+
+        .doctor-card:hover .doctor-img {
+            transform: scale(1.03);
+        }
+
+        .doctor-body {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .doctor-name {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--dark-gray);
+        }
+
+        .doctor-specialty {
+            color: var(--primary-main);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .doctor-bio {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-link {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gray);
+            transition: var(--transition-base);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-main);
+            color: white;
+            transform: translateY(-3px);
+        }
+        /* الفوتر */
+        .footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-about {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #bdc3c7;
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--dental-green);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: var(--transition-base);
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--dental-green);
+            transform: translateX(-5px);
+        }
+
+        .footer-links a i {
+            margin-left: 5px;
+            color: var(--dental-green);
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            color: #bdc3c7;
+        }
+
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contact-info i {
+            margin-left: 10px;
+            color: var(--dental-green);
+            margin-top: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition-base);
+        }
+
+        .social-icon:hover {
+            background-color: var(--dental-green);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #bdc3c7;
+        }
+
+        /* تأثيرات التمرير */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* زر العودة للأعلى */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--dental-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-main);
+            transform: translateY(-5px);
+        }
+
+        /* تأثيرات خاصة */
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .floating-animation {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 991.98px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding: 100px 0;
+                text-align: center;
+                background-attachment: scroll;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-btns .btn {
+                margin-left: 0;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .feature-item {
+                justify-content: center;
+            }
+            
+            .footer {
+                text-align: center;
+            }
+            
+            .footer-title::after {
+                right: 50%;
+                transform: translateX(50%);
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+            
+            .contact-info li {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }

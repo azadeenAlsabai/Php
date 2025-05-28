@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    
+}
+body{
+    background-color: rgb(241, 236, 229);
+    margin-top: 20px;
+}
+header{
+
+    display: flex;
+    flex-direction: column;
+}
+header .NameBooking{
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+
+}
+hr{
+    color: rgb(233, 231, 227);
+    margin: 20px;
+    background-color: rgb(233, 231, 227);
+}
+header .NameBooking p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(1, 150, 219);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .NameBooking img{
+width: 32px;
+height: 32px;
+margin-left: 10px;
+margin-right: 30px;
+
+}
+header .SearchAndFilter{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Mysearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: white;
+    border-radius: 15px;
+}
+.Mysearch img{
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.Mysearch img:hover{
+    background-color: rgb(226, 229, 233);
+}
+.Mysearch input{
+width: 170px;
+height: 30px;
+font-size: 20px;
+text-align: center;
+border-color: rgb(61, 219, 167);
+border-radius: 10px;
+}
+header .SearchAndFilter button,select{
+
+
+    width: 150px;
+    height: 35px;
+    background-color: rgb(1, 146, 146);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+
+}
+ dt .ImgeInTableServices{
+    width: 32px;
+    height: 32px;
+}
+header .SearchAndFilter button{
+    border: none;
+}
+section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+}
+section table{
+ display: flex;
+align-items: center;
+justify-content: center; 
+width: 100%;
+direction: rtl;
+
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 40px;
+margin-bottom: 40px;
+text-align: center;
+
+align-items: center;
+flex-direction: column;
+}
+section table .MyHeader{
+ 
+/* width: 100%; */
+background-color: rgb(1, 146, 146);
+color: rgb(255, 255, 255);
+padding: 15px;
+text-align: center;
+font-weight: bolder;
+
+}
+section table .None{
+background-color: rgb(241, 236, 229);
+width: 1px;
+}
+section table .Myrow{
+   /* display: flex;
+   flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+font-family: 'Times New Roman', Times, serif    ;
+
+   background-color: aquamarine;
+/* width: 100%; */
+font-size: 22px;
+}
+section table .Myrow td{
+
+width: 150px;
+
+}
+.imges{
+padding: 10px 20px 10px 20px;
+}
+.imges:hover{
+background-color: rgb(15, 29, 148);
+border-radius: 20px;
+}
+
+.DoctorImge{
+
+
+    width: 50px;
+height: 50px;
+}
